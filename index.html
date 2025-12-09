@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkun Arslantürk | Game Programmer</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #00ADB5;
+            --card-bg: #1e1e1e;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 50px 0; border-bottom: 1px solid #333; }
+        h1 { margin: 0; font-size: 2.5rem; color: var(--accent-color); }
+        h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-top: 40px; display: inline-block; }
+        .subtitle { font-size: 1.2rem; color: #aaa; margin-top: 10px; }
+        
+        /* Projects Grid */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+        .project-card { background-color: var(--card-bg); padding: 20px; border-radius: 8px; transition: transform 0.2s; }
+        .project-card:hover { transform: translateY(-5px); border: 1px solid var(--accent-color); }
+        .project-title { font-size: 1.25rem; font-weight: bold; color: #fff; margin-bottom: 5px; }
+        .tech-stack { font-size: 0.9rem; color: var(--accent-color); font-family: monospace; margin-bottom: 10px; display: block; }
+        
+        /* Skills Section */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
+        .skill-tag { background-color: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+        a { color: var(--accent-color); text-decoration: none; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.9rem; color: #666; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Orkun Arslantürk</h1>
+        <div class="subtitle">Game Programmer | Stockholm, Sweden</div>
+        <p>Specialized in Gameplay Systems, AI Programming & C++ / Unreal Engine 5</p>
+        <p>
+            <a href="mailto:email@example.com">Email Me</a> | 
+            <a href="https://linkedin.com/in/orkun-arslantürk" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/USERNAME" target="_blank">GitHub</a>
+        </p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Game Programmer student at <strong>Futuregames</strong> in Stockholm, with a background in Digital Game Design. 
+            I have hands-on experience in <strong>Unity, Unreal Engine 5, and C++</strong>. My passion lies in building scalable gameplay systems, 
+            intelligent AI behaviors, and solving complex technical problems in collaborative team environments.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li class="skill-tag">C++</li>
+            <li class="skill-tag">C#</li>
+            <li class="skill-tag">Unreal Engine 5</li>
+            <li class="skill-tag">Unity</li>
+            <li class="skill-tag">AI Programming</li>
+            <li class="skill-tag">GLSL / Shader Graph</li>
+            <li class="skill-tag">Git & Perforce</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="project-title">Before the Eclipse</div>
+                <span class="tech-stack">Unreal Engine 5 | C++ | Gameplay</span>
+                <p>Designed a modular <strong>Quest System</strong> using Data Tables and C++. Developed a Game Progression Manager for handling persistent player stats and inventory.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Ok'rhams Creation</div>
+                <span class="tech-stack">Unreal Engine 5 | C++ | AI</span>
+                <p>Implemented 3 distinct enemy AI types using <strong>Behavior Trees</strong> and custom C++ AIControllers. Optimized performance with object pooling for enemy spawning.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Performance Optimization</div>
+                <span class="tech-stack">C++ | Custom Engine</span>
+                <p>Optimized collision simulation from 5 FPS to 60+ FPS using a <strong>Spatial Hash Grid</strong>, reducing complexity from O(N²) to O(N).</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">OpenGL to Unity Shader</div>
+                <span class="tech-stack">GLSL | HLSL | Shader Graph</span>
+                <p>Adapted custom shaders with Blinn-Phong lighting from OpenGL to Unity, demonstrating low-level graphics programming skills.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Orkun Arslantürk. Built for Game Programming Portfolio.</p>
+    </footer>
+</div>
+
+</body>
+</html>
